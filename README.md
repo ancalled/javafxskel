@@ -1,0 +1,2 @@
+# javafxskel
+Skeleton for JavaFX
