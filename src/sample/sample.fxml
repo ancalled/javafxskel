@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8"
+          fx:controller="sample.MainController">
+    <columnConstraints>
+        <ColumnConstraints/>
+        <ColumnConstraints/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints/>
+        <RowConstraints/>
+    </rowConstraints>
+    <children>
+        <TabPane prefHeight="579.0" prefWidth="731.0" tabClosingPolicy="UNAVAILABLE" GridPane.columnIndex="1"
+                 GridPane.rowIndex="1">
+            <tabs>
+                <Tab text="Рынок">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <TableView id="instr-table" fx:id="instrsTable" layoutY="36.0" prefHeight="511.0" prefWidth="731.0">
+                                    <columns>
+                                        <TableColumn fx:id="symbolColumn" prefWidth="75.0" text="%instrument.symbol"/>
+                                        <TableColumn fx:id="statusColumn" prefWidth="75.0" text="%instrument.status"/>
+                                        <TableColumn styleClass="price" fx:id="lastPriceColumn" prefWidth="75.0" text="%instrument.lastPrice"/>
+                                        <TableColumn styleClass="price" fx:id="lowPriceColumn" prefWidth="75.0" text="%instrument.lowPrice"/>
+                                        <TableColumn styleClass="price" fx:id="highPriceColumn" prefWidth="75.0" text="%instrument.highPrice"/>
+                                    </columns>
+                                </TableView>
+                                <ToolBar layoutY="-2.0" prefHeight="38.0" prefWidth="731.0">
+                                    <items>
+                                        <Button mnemonicParsing="false" text="Button"/>
+                                        <ComboBox prefWidth="150.0"/>
+                                    </items>
+                                </ToolBar>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Позиции">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <TreeTableView layoutX="2.0" layoutY="16.0" prefHeight="530.0" prefWidth="731.0">
+                                    <columns>
+                                        <TreeTableColumn prefWidth="75.0" text="C1"/>
+                                        <TreeTableColumn prefWidth="75.0" text="C2"/>
+                                    </columns>
+                                </TreeTableView>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+</GridPane>
