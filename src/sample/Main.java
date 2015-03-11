@@ -27,7 +27,7 @@ public class Main extends Application {
 
 
         primaryStage.setTitle("Jafax Skel");
-        Scene scene = new Scene(root, 300, 275);
+        Scene scene = new Scene(root);
         scene.getStylesheets().add(Main.class.getResource("/sample/table.css").toExternalForm());
 
         primaryStage.setScene(scene);
