@@ -25,7 +25,6 @@ public class Main extends Application {
 
         initMarket(controller);
 
-
         primaryStage.setTitle("Jafax Skel");
 
         Scene scene = new Scene(root);
